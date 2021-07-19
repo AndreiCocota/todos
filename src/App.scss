@@ -1,0 +1,103 @@
+body {
+    background-color: #FF8303;
+    .App {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: #F0E3CA;
+        margin: 50px auto 0 auto;
+        box-shadow: 0 2px 6px #555;
+        text-align: center;
+        border-radius: 10px;
+        min-height: 500px;
+        .form-container {
+           
+            
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            h1 {
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+    
+            form {
+                width: 100%;  
+                display: flex;
+                
+                input {
+                    flex: 3;
+                    border:none;
+                    outline: none;
+                    margin-right: 5px;
+                    
+                }
+    
+                button {
+                    outline: none;
+                    border: none;
+                    padding: 8px 15px;
+                    background-color: #A35709;
+                    border-radius: 8px;
+                    color:white;
+                    font-weight: 600;
+                }
+            }
+    
+            ul {
+                width: 100%;
+                padding-left: 0px;
+                li {  
+                    list-style-type: none;
+                    border: 1px solid #e2ae7b;
+                    padding: 10px;
+                    margin: 10px 0;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .checked-list {
+                        text-decoration: line-through;
+                        opacity: 0.5;
+                    }
+
+                    .edit-input {
+                        border:none;
+                        outline: none;
+                    }
+    
+                    .list-buttons {
+                        button {
+                            border: none;
+                            outline: none;
+                            padding: 8px 15px;
+                            margin-left: 5px; 
+                            color: white;
+                            font-weight: 600;
+                            border-radius: 8px;
+                            &:disabled {
+                                opacity: 0.5;
+                            }
+                        }
+                        .blue-button {
+                            background-color: rgb(31, 103, 197);
+                        }
+    
+                        .red-button {
+                            background-color: red;
+                        }
+    
+                        .yellow-button {
+                            background-color: yellow;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
